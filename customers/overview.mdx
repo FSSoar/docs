@@ -1,0 +1,48 @@
+---
+title: "Customers Overview"
+description: "Learn About the Customers Overview Page"
+---
+
+<img
+  src="/images/localhost_3000_customers.jpeg"
+  alt="Localhost 3000 Customers Jpe"
+  title="Localhost 3000 Customers Jpe"
+  style={{ width:"100%" }}
+/>
+
+### **Data Table**
+
+The core of the page is a powerful table showing one row per customer. Each row includes customer metadata, and each column can be sorted or filtered.
+
+### Columns:
+
+| Column          | Description                                               |
+| :-------------- | :-------------------------------------------------------- |
+| **Select**      | Checkbox for bulk actions.                                |
+| **ID**          | Unique alphanumeric ID for internal use.                  |
+| **Actions**     | Button labeled `View →` opens the customer detail view.   |
+| **Company**     | Customer's organization name (e.g., "ACME INC").          |
+| **First Name**  | Customer’s primary contact first name.                    |
+| **Last Name**   | Customer’s primary contact last name.                     |
+| **Street**      | Street address on file. Will be used for billing address. |
+| **Town**        | Town/City of the customer.                                |
+| **Zip**         | ZIP code.                                                 |
+| **State**       | Two-letter state abbreviation (e.g., "MA").               |
+| **Email**       | Primary contact email.                                    |
+| **Phone #**     | Phone number on record.                                   |
+| **Website**     | Website for the customer record                           |
+| **Internal ID** | Organization-specific internal reference code.            |
+| **Created At**  | Timestamp of when the customer was added.                 |
+
+### **Table Controls:**
+
+- **Search**:\
+  Appears in the top-left of the table. Search across all visible columns
+- **Column Selector**:\
+  Appears in the top-right of the table. Allows users to show/hide specific columns.
+- **Export**:\
+  Appears in the top-right of the table to the left of the Column Selector. This allows you to export data. Filters will impact exported data. 
+- **Sort & Filter Menus**:\
+  Each column (like Email, State, Created At) has sorting and/or filtering capability.
+- **Pagination Controls**:\
+  Located at the bottom-right. In this view, only 9 records are shown (1–9 of 9).

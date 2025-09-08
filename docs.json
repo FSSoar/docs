@@ -22,6 +22,16 @@
             ]
           },
           {
+            "group": "Customers",
+            "pages": [
+              "customers/overview",
+              "quickstart",
+              "development"
+            ]
+          },
+
+          
+          {
             "group": "Essentials",
             "pages": [
               "essentials/markdown",
