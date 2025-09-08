@@ -4,7 +4,7 @@
   "name": "BlueHill",
   "colors": {
     "primary": "#4C5BE1",
-    "light": "#07C983",
+    "light": "#4C5BE1",
     "dark": "#4C5BE1"
   },
   "favicon": "/favicon.svg",
