@@ -32,8 +32,9 @@
 
           
           {
-            "group": "Pricing",
+            "group": "Plans, Pricing, Tiers",
             "pages": [
+              "pricing/overview",
               "pricing/add-modify-plans-and-pricing"
             ]
           }

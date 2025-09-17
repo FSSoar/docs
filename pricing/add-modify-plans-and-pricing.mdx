@@ -1,71 +1,125 @@
 ---
-title: "Add & Modify Plans, Pricing and Tiers "
-description: "To create plans that can be added to customers you have to create a Plan, Pricing Group and Tiers. This guide will go over each step to create new pricing."
+title: "Add & Modify Plans, Pricing, and Tiers"
+description: "To assign pricing to customers, you need to create a Plan, Pricing Group, and Tiers. This guide walks you through each step."
 ---
+
+# Add & Modify Plans, Pricing, and Tiers
+
+## 🧩 Understanding the Structure
 
 ![PlanStructure.png](/images/PlanStructure.png)
 
-Above is the architecture of Plans, Pricing and Tiers. Plans typically describe the product or service (Annual Subscription, Monthly Subscription, Add-Ons). Pricing defines schemes or promotions that can change for example 2025 Pricing, 2026 Pricing, Q4 Promotional Pricing, etc. The Tiers define the pricing for each level of your subscription this can be based on the name of the tier such as (Silver, Gold, Platinum) or based on usage Metrics (0-1000 emails, 1001-2500 emails, etc).
+- **Plans** define the overall product or service offering (e.g., _Annual Subscription_, _Monthly Plan_, _Add-On_).
+- **Pricing Groups** are versions of pricing (e.g., _2025 Pricing_, _Q4 Promo_, etc.) tied to a Plan.
+- **Tiers** specify the pricing structure (e.g., _Silver_, _Gold_, _0–1000 emails_, etc.) within each Pricing Group.
 
-### Plan Setup
+---
 
-Navigate to: `Pricing` from the sidebar or go to `/plans`
+## ✅ Step 1: Create a Plan
 
-In the top right of the screen click on the `Add Plan Button` and a Dialog will popup
+**Navigate to:**\
+Go to `Pricing` in the sidebar or visit `/plans`.
 
-![image.png](/images/image.png)
-
-#### Plan Types Explained
-
-There are 4 kinds of plans in BlueHill which allow for flexible pricing and adminsitration
-
-**Fixed Rate:** Simple subscriptions with a fixed amount charged every month, year, quarter etc. This could be \$10 / month for Netflix for example.
-
-**Graduated Rates: **This is a tiered system based on usage `Metrics` for example (0-1000 Emails, 1001-2500 emails etc.) This must be connected to a metric in the next step.
-
-**Levels:** This is a tiered system the is **NOT BASED ON USAGE**. This is similar to fixed pricing for subscriptions like (Bronze, Silver and Gold tiers)
-
-**Metered:** Allows for a fixed unit cost per numerical metric for example \$0.01 / email or \$0.20 / contact.
-
-Once you have selected your plan type, give it a `name`, `currency`(default USD), and `cadence`. You can optionally add an `Accounting ID`
-
-Click `Create Plan`
-
-### Add Pricing Group
-
-![Clipboard-20250917-172042-483.gif](/images/Clipboard-20250917-172042-483.gif)
-
-Click on `Actions` in the top right of the screen and then click `Add Pricing`
-
-Setup `Pricing Name`
-
-### Add Tiers To Pricing
-
-Click on `Actions` next to the pricing information then click `Add Level`. Add tier pricing information. If this is a `Graduated` plan type you will also need to select your usage `Metric`
+**1. Click** the `Add Plan` button in the top-right corner.\
+A dialog will appear.
 
 ![image.png](/images/image.png)
 
-Click `Save`
+### 🧠 Plan Types Explained
 
-Your new pricing will automatically be added to the grid and made available for customers.
+There are 4 types of plans you can choose from:
 
-### Duplicate/Modify Pricing
+- **Fixed Rate**\
+  A flat fee billed on a set cadence (e.g., \$10/month for Netflix).
+- **Graduated Rates**\
+  Tiered pricing based on **usage metrics**.\
+  Example:
+  - 0–1000 emails
+  - 1001–2500 emails
 
-Click on `Actions` next to the pricing information then click `Duplicate`
+  > ⚠️ You’ll select the usage metric in the next step.
+- **Levels**\
+  Tiered pricing **not based on usage**.\
+  Think of Bronze/Silver/Gold subscriptions.
+- **Metered**\
+  Billed per unit of a metric.\
+  Example:  0.20 per contact.
+
+---
+
+### 📝 Fill Out Plan Details
+
+- **Name:** What is this plan called?
+- **Currency:** Default is USD
+- **Cadence:** Billing frequency (monthly, yearly, etc.)
+- _(Optional)_ **Accounting ID**
+
+**Click:** `Create Plan`
+
+---
+
+## 💰 Step 2: Add a Pricing Group
+
+**1. Click** `Actions` in the top-right of your new plan.
+
+**2. Select** `Add Pricing`.
+
+**3. Enter** a name for this pricing group\
+_(e.g., "2026 Pricing", "Fall Promo", etc.)_
+
+---
+
+## 🧮 Step 3: Add Tiers to the Pricing Group
+
+**1. Click** `Actions` next to your pricing group.
+
+**2. Select** `Add Level`.
+
+**3. Fill in the tier details:**
+
+- **Price**
+- **Label** (e.g., Gold, Enterprise)
+- **Usage bounds** (for _Graduated_ plans)
+- **Metric** (required for _Graduated_ plans)
+
+![image.png](/images/image.png)
+
+**Click:** `Save`\
+Your tiers will now appear in the grid and will be available for customer assignment.
+
+---
+
+## ➕ Duplicate or Modify Existing Pricing
+
+**1. Click** `Actions` next to the pricing group.
+
+**2. Select** `Duplicate`.
 
 <img
   src="/images/Capture-2025-09-17-122741.png"
-  alt="Capture-2025-09-17-122741.png"
-  title="Capture-2025-09-17-122741.png"
-  style={{ width:"33%" }}
+  alt="Duplicate Pricing"
+  title="Duplicate Pricing"
+  style="width: 33%;"
 />
 
-Add Pricing Increase/Decrease Information and new `Pricing Name`
+**3. Fill in:**
+
+- A new **Pricing Name**
+- A percentage **Increase or Decrease** in pricing\
+  _(useful for updating pricing annually)_
 
 ![Capture-2025-09-17-122919.png](/images/Capture-2025-09-17-122919.png)
 
-Click `Save`
+**Click:** `Save`
 
-### Deactivate Pricing
+---
 
-Click on `Actions` next to the pricing information then click `Deactive Pricing`
+## 🔕 Deactivate a Pricing Group
+
+**1. Click** `Actions` next to the pricing group.
+
+**2. Select** `Deactivate Pricing`.
+
+> ⚠️ This removes the pricing group from availability but preserves historical records.
+
+---
