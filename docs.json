@@ -62,14 +62,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Application",
+          "href": "https://beta.bluehillpayments.com",
+          "icon": "app-window-mac"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Beta Application",
+          "href": "https://beta.bluehillpayments.com",
+          "icon": "flask-conical"
         },
         {
           "anchor": "Blog",
