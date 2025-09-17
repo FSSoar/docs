@@ -62,6 +62,11 @@
     "global": {
       "anchors": [
         {
+          "anchor": "Home",
+          "href": "https://bluehillpayments.com",
+          "icon": "house"
+        },
+        {
           "anchor": "Application",
           "href": "https://beta.bluehillpayments.com",
           "icon": "app-window-mac"
@@ -70,11 +75,6 @@
           "anchor": "Beta Application",
           "href": "https://beta.bluehillpayments.com",
           "icon": "flask"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
