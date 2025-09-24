@@ -5,119 +5,100 @@ description: "To assign pricing to customers, you need to create a Plan, Pricing
 
 ## 🧩 Understanding the Structure
 
-![PlanStructure.png](/images/PlanStructure.png)
+![Plan Structure](/images/PlanStructure.png)
 
 - **Plans** define the overall product or service offering (e.g., _Annual Subscription_, _Monthly Plan_, _Add-On_).
-- **Pricing Groups** are versions of pricing (e.g., _2025 Pricing_, _Q4 Promo_, etc.) tied to a Plan.
-- **Tiers** specify the pricing structure (e.g., _Silver_, _Gold_, _0–1000 emails_, etc.) within each Pricing Group.
+- **Pricing Groups** are versions of pricing (e.g., _2025 Pricing_, _Q4 Promo_) tied to a Plan.
+- **Tiers** specify the pricing structure (e.g., _Silver_, _Gold_, _0–1000 emails_) within each Pricing Group.
 
 ---
 
 ## ✅ Step 1: Create a Plan
 
-**Navigate to:**
-Go to `Pricing` in the sidebar or visit `/plans`.
+**Navigate to:** Go to **Pricing** in the sidebar or visit `/plans`.
 
-**1. Click** the `Add Plan` button in the top-right corner.\
-A dialog will appear.
+**1. Click** **Add Plan** in the top-right corner. A dialog will appear.
 
-![image.png](/images/image.png)
+![Add Plan Dialog](/images/image.png)
 
 ### 🧠 Plan Types Explained
 
 There are 4 types of plans you can choose from:
 
-- **Fixed Rate**\
+- **Fixed Rate**  
   A flat fee billed on a set cadence (e.g., \$10/month for Netflix).
-- **Graduated Rates**\
-  Tiered pricing based on **usage metrics**.\
-  Example:
+
+- **Graduated Rates**  
+  Tiered pricing based on **usage metrics**. Example:
   - 0–1000 emails
   - 1001–2500 emails
 
   > ⚠️ You’ll select the usage metric in the next step.
-- **Levels**\
-  Tiered pricing **not based on usage**.\
-  Think of Bronze/Silver/Gold subscriptions.
-- **Metered**\
-  Billed per unit of a metric.\
-  Example:  0.20 per contact.
+
+- **Levels**  
+  Tiered pricing **not based on usage** (e.g., Bronze/Silver/Gold).
+
+- **Metered**  
+  Billed per unit of a metric (e.g., \$0.20 per contact).
 
 ---
 
 ### 📝 Fill Out Plan Details
 
 - **Name:** What is this plan called?
-- **Currency:** Default is USD
-- **Cadence:** Billing frequency (monthly, yearly, etc.)
+- **Currency:** Default is USD.
+- **Cadence:** Billing frequency (monthly, yearly, etc.).
 - _(Optional)_ **Accounting ID**
 
-**Click:** `Create Plan`
+**Click:** **Create Plan**
 
 ---
 
 ## 💰 Step 2: Add a Pricing Group
 
-**1. Click** `Actions` in the top-right of your new plan.
-
-**2. Select** `Add Pricing`.
-
-**3. Enter** a name for this pricing group\
-_(e.g., "2026 Pricing", "Fall Promo", etc.)_
+1. Click **Actions** in the top-right of your new plan.  
+2. Select **Add Pricing**.  
+3. Enter a name for this pricing group (e.g., “2026 Pricing”, “Fall Promo”).
 
 ---
 
 ## 🧮 Step 3: Add Tiers to the Pricing Group
 
-**1. Click** `Actions` next to your pricing group.
+1. Click **Actions** next to your pricing group.  
+2. Select **Add Level**.  
+3. Fill in the tier details:
+   - **Price**
+   - **Label** (e.g., Gold, Enterprise)
+   - **Usage bounds** (for _Graduated_ plans)
+   - **Metric** (required for _Graduated_ plans)
 
-**2. Select** `Add Level`.
+![Tier Form](/images/image.png)
 
-**3. Fill in the tier details:**
-
-- **Price**
-- **Label** (e.g., Gold, Enterprise)
-- **Usage bounds** (for _Graduated_ plans)
-- **Metric** (required for _Graduated_ plans)
-
-![image.png](/images/image.png)
-
-**Click:** `Save`\
+**Click:** **Save**  
 Your tiers will now appear in the grid and will be available for customer assignment.
 
 ---
 
 ## ➕ Duplicate or Modify Existing Pricing
 
-**1. Click** `Actions` next to the pricing group.
+1. Click **Actions** next to the pricing group.  
+2. Select **Duplicate**.
 
-**2. Select** `Duplicate`.
+![Duplicate Pricing](/images/Capture-2025-09-17-122741.png)
 
-<img
-  src="/images/Capture-2025-09-17-122741.png"
-  alt="Duplicate Pricing"
-  title="Duplicate Pricing"
-  style="width: 33%;"
-/>
+3. Fill in:
+   - A new **Pricing Name**
+   - A percentage **Increase or Decrease** in pricing (useful for annual updates)
 
-**3. Fill in:**
+![Pricing Adjustment](/images/Capture-2025-09-17-122919.png)
 
-- A new **Pricing Name**
-- A percentage **Increase or Decrease** in pricing\
-  _(useful for updating pricing annually)_
-
-![Capture-2025-09-17-122919.png](/images/Capture-2025-09-17-122919.png)
-
-**Click:** `Save`
+**Click:** **Save**
 
 ---
 
 ## 🔕 Deactivate a Pricing Group
 
-**1. Click** `Actions` next to the pricing group.
-
-**2. Select** `Deactivate Pricing`.
+1. Click **Actions** next to the pricing group.  
+2. Select **Deactivate Pricing**.
 
 > ⚠️ This removes the pricing group from availability but preserves historical records.
-
----
